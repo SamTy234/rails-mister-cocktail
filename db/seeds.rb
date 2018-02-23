@@ -22,7 +22,7 @@ end
 # Ingredient.create(name: "mint leaves")
 
 # url = 'https://picsum.photos/200/300/?random'
-url = 'https://source.unsplash.com/collection/829192/1600x900'
+url = 'https://source.unsplash.com/collection/829192/1920x1080'
 
 
 10.times do
