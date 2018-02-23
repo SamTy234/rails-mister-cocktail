@@ -1,0 +1,32 @@
+
+<div class="banner" >
+  <div class="banner-content">
+    <div class="content">
+      <h1>List of cocktails</h1>
+      <%=link_to new_cocktail_path do %>
+      <div class="btn btn-primary">Create</div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <%@cocktails.each do |cocktail| %>
+      <div class="col-xs-12 col-sm-4">
+        <%= link_to cocktail_path(cocktail) do %>
+          <div class="card card-description" >
+            <h2><%= cocktail.name %></h2>
+          </div>
+        <% end %>
+        <div class="card-link">
+          <%= link_to cocktail_path(cocktail), method: :delete do %>
+            <i class="fas fa-trash-alt"></i>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+

@@ -1,0 +1,16 @@
+.banner{
+  height: 100vh;
+  // width: 200px;
+  background-image: linear-gradient(-225deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 50%)
+  ,url('http://www.rosiehost.com/host/Tokoriki%20Island%20Resort%202016%20Pictures/slides/TOKM20A_F-B_Cocktails_high_res.jpg');
+  background-size: cover;
+}
+
+.banner-content{
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  align-items: center;
+  height: 100%;
+}
+

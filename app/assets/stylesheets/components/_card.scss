@@ -1,0 +1,49 @@
+.card {
+  height: 300px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-image: url("http://images.all-free-download.com/images/graphiclarge/cocktail_of_highdefinition_picture_five_166470.jpg");
+  background-size: cover;
+  background-color: #F8F9FA;
+  color: black;
+  // position: relative;
+  border: 1px solid rgba(0,0,0,0.2);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  opacity: 0.9;
+
+  &:hover{
+    opacity: 1;
+  }
+
+}
+
+
+i{
+  font-size: 25px;
+  opacity: 0.5px;
+}
+.card-description {
+  h2{
+    font-size: 47px;
+    color: white;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  h1{
+
+    font-size: 30px;
+    font-weight: bold;
+  }
+}
+
+.fas {
+  opacity: 0.5;
+  &:hover{
+    opacity: 1;
+  }
+}
+
+a {
+  text-decoration: none !important;
+}
