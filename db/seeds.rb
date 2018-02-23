@@ -29,5 +29,6 @@ url = 'https://source.unsplash.com/collection/829192/1920x1080'
   cocktail = Cocktail.new(name: Faker::OnePiece.akuma_no_mi )
   cocktail.remote_photo_url = url
   cocktail.save
+  sleep(2)
 end
 
