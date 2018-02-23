@@ -11,9 +11,7 @@ require 'open-uri'
 Cocktail.destroy_all
 
 50.times do
-  ingredient = Ingredient.new(
-    name: Faker::Superhero.name
-    )
+  ingredient = Ingredient.new(name: Faker::Superhero.name)
   ingredient.save
 end
 
@@ -26,7 +24,7 @@ url = 'https://source.unsplash.com/collection/829192/1920x1080'
 
 
 10.times do
-  cocktail = Cocktail.new(name: Faker::OnePiece.akuma_no_mi )
+  cocktail = Cocktail.new(name: Faker::OnePiece.akuma_no_mi,  )
   cocktail.remote_photo_url = url
   cocktail.save
   sleep(2)
