@@ -1,16 +1,18 @@
-<div class="container" style="background-image: linear-gradient(rgba(0,0,0,0.3),
+<div class="container flex" style="background-image: linear-gradient(rgba(0,0,0,0.3),
           rgba(0,0,0,0.2)), url('<%= cl_image_path @cocktail.photo, crop: :fill; %>')">
-  <div class="cocktail-details">
+
+  <div class="cocktail-details text-center">
     <h1><%= "Details for #{@cocktail.name}" %></h1>
-    <h4><%= link_to "Add a dose", new_cocktail_dose_path(@cocktail)  %></h4>
+    <%= link_to "Add a dose", new_cocktail_dose_path(@cocktail), class: "btn btn-primary" %>
+    <%= link_to "Back", cocktails_path , class: "btn btn-warning"%>
     <div class="doses">
       <% @cocktail.doses.each  do |dose| %>   <!-- this is possible because Has many doses -->
         <li>
           <%= "Dosage: #{dose.description} | Ingredient: #{dose.ingredient.name}" %>
-          <%= link_to "Delete", dose_path(dose), method: :delete  %>
+          <%= link_to "Delete", dose_path(dose), method: :delete, class: "btn btn-danger"  %>
         </li>
       <% end %>
     </div>
-    <h3><%= link_to "Back", cocktails_path  %></h3>
   </div>
+
 </div>

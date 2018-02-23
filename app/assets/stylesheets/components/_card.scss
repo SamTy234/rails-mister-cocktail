@@ -49,6 +49,18 @@ i{
   }
 }
 
+.card-link{
+  background-color: transparent;
+  height: 300px;
+  width: 400px;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  left: 0;
+
+}
+
 a {
   text-decoration: none !important;
 }
