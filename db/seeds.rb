@@ -6,6 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'faker'
+require 'open-uri'
+# Ingredient.destroy_all
+Cocktail.destroy_all
 
 50.times do
   ingredient = Ingredient.new(
@@ -18,11 +21,13 @@ end
 # Ingredient.create(name: "ice")
 # Ingredient.create(name: "mint leaves")
 
+# url = 'https://picsum.photos/200/300/?random'
+url = 'https://source.unsplash.com/collection/829192/1600x900'
+
 
 10.times do
-  cocktail = Cocktail.new(
-    name: Faker::OnePiece.akuma_no_mi
-    )
+  cocktail = Cocktail.new(name: Faker::OnePiece.akuma_no_mi )
+  cocktail.remote_photo_url = url
   cocktail.save
 end
 
